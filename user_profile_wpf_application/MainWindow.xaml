@@ -1,0 +1,42 @@
+﻿<Window x:Class="user_profile_wpf_application.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:user_profile_wpf_application"
+        mc:Ignorable="d"
+        Title="User Selection" Height="650" Width="500">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+
+        <StackPanel Grid.Column="0" Grid.Row="0" Margin="10 2 10 0">
+            <Label x:Name="titleLbl">Added Users Appear Here</Label>
+            <ListBox x:Name="listBox"/>
+            <Label x:Name="itemsNoLbl">0 items present</Label>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="1" Margin="10 2 10 0">
+            <TextBox Margin = "25 20 25 10"  x:Name="textBox"/>
+            <Button Margin="25 0 25 0" Click="addUsers_click">Add Users</Button>
+            <Calendar Margin="10" 
+            SelectedDate="1/01/2005"
+            DisplayDate="12/20/2023"
+            DisplayDateStart="1/10/2000"
+            DisplayDateEnd="12/31/2022"/>
+        </StackPanel>
+
+
+
+
+    </Grid>
+</Window>

@@ -21,9 +21,18 @@
 
         <StackPanel Grid.Column="0" Grid.Row="0" Margin="10 2 10 0">
             <Label x:Name="titleLbl">Added Users Appear Here</Label>
-            <ListBox x:Name="listBox"/>
+            <StackPanel Orientation="Horizontal" Margin="0 10 0 10">
+                <Button Width="60" Height="20" BorderBrush="Black" Content="backward" Click="moveBackward_click"/>
+                <ListBox x:Name="listBox"/>
+                <Button Width="60" Height="20" Content="Forward" Click="moveForward_click"/>
+
+            </StackPanel>
+           
             <Label x:Name="itemsNoLbl">0 items present</Label>
         </StackPanel>
+
+        
+        
 
         <StackPanel Grid.Row="0" Grid.Column="1" Margin="10 2 10 0">
             <TextBox Margin = "25 20 25 10"  x:Name="textBox"/>

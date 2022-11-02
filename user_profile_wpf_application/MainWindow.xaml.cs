@@ -42,5 +42,15 @@ namespace user_profile_wpf_application
                 return;
             }
         }
+
+        private void moveBackward_click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Move back by 1 count");
+        }
+
+        private void moveForward_click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Move forward by 1 count");
+        }
     }
 }
